@@ -40,7 +40,7 @@ BaseStore.prototype.writeChanges = function (changes) {
 
 BaseStore.prototype.getChanges = function (id, filter) {
   return Promise.resolve(null).then(function () {
-    this._getChanges(id, filter)
+    return this._getChanges(id, filter)
   }.bind(this)).then(function (result) {
     if (result.changes.length === 0) {
       return result;
