@@ -1,6 +1,6 @@
 {
   "name": "moped-sync-store-base",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Base class for moped-sync-stores",
   "keywords": ["moped", "moped-sync"],
   "dependencies": {},
