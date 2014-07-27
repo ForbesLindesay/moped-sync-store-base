@@ -2,13 +2,18 @@
   "name": "moped-sync-store-base",
   "version": "0.0.1",
   "description": "Base class for moped-sync-stores",
-  "keywords": ["moped", "moped-sync"],
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "*"
+  "keywords": [
+    "moped",
+    "moped-sync"
+  ],
+  "dependencies": {
+    "clone": "^0.1.17",
+    "mongomatch": "^0.1.0",
+    "promise": "^5.0.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",

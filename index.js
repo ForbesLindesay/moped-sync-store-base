@@ -3,8 +3,6 @@
 var Promise = require('promise');
 var clone = require('clone');
 var match = require('mongomatch');
-var ObjectId = require('moped-id');
-var applyUpdate = require('moped-apply-update');
 
 module.exports = BaseStore;
 function BaseStore() {}
