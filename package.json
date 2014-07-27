@@ -2,7 +2,7 @@
   "name": "moped-sync-store-base",
   "version": "0.0.0",
   "description": "Base class for moped-sync-stores",
-  "keywords": [],
+  "keywords": ["moped", "moped-sync"],
   "dependencies": {},
   "devDependencies": {
     "mocha": "*"
