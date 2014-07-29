@@ -1,5 +1,6 @@
 'use strict';
 
+var assert = require('assert');
 var Promise = require('promise');
 var clone = require('clone');
 var match = require('mongomatch');
@@ -10,12 +11,14 @@ function BaseStore() {}
 
 BaseStore.prototype.getItem = function (collection, id) {
   return Promise.resolve(null).then(function () {
+    assert(typeof collection === 'string', 'collection must be a string');
     return this._getItem(collection, id);
   }.bind(this));
 };
 
 BaseStore.prototype.getInitial = function (filter) {
   return Promise.resolve(null).then(function () {
+    assert(filter && typeof filter === 'object', 'filter must be an object');
     return this._getInitial(filter)
   }.bind(this)).then(function (initial) {
     initial = clone(initial);
@@ -34,12 +37,14 @@ BaseStore.prototype.getInitial = function (filter) {
 
 BaseStore.prototype.writeChanges = function (changes) {
   return Promise.resolve(null).then(function () {
+    assert(Array.isArray(changes), 'changes must be an array');
     return this._writeChanges(changes);
   }.bind(this));
 };
 
 BaseStore.prototype.getChanges = function (id, filter) {
   return Promise.resolve(null).then(function () {
+    assert(filter && typeof filter === 'object', 'filter must be an object');
     return this._getChanges(id, filter)
   }.bind(this)).then(function (result) {
     if (result.changes.length === 0) {
