@@ -2,7 +2,7 @@
 
 Base class for moped-sync-stores
 
-[![Dependency Status](https://img.shields.io/gemnasium/mopedjs/moped-sync-store-base.svg)](https://gemnasium.com/mopedjs/moped-sync-store-base)
+[![Dependency Status](https://img.shields.io/david/mopedjs/moped-sync-store-base.svg)](https://david-dm.org/mopedjs/moped-sync-store-base)
 [![NPM version](https://img.shields.io/npm/v/moped-sync-store-base.svg)](https://www.npmjs.org/package/moped-sync-store-base)
 
 ## Installation
